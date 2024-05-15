@@ -36,6 +36,11 @@ body::-webkit-scrollbar {
   margin-top: auto; /* Push the footer to the bottom of the viewport */
 }
 
+.home-bottons-non {
+  background-color: var(--primary) !important;
+  color: white !important;
+}
+
 .home-bottons {
   background-color: var(--primary) !important;
   color: white !important;
@@ -49,6 +54,11 @@ body::-webkit-scrollbar {
 
 .footer-text {
   font-size: 0.8rem;
+}
+
+.dropdown-menu {
+  background: none !important;
+  border: none !important;
 }
 
 .box {
@@ -88,6 +98,12 @@ body::-webkit-scrollbar {
 .liner {
   width: 100%;
   height: 2px;
+  background-color: #4b4862;
+}
+
+.liner-vertical {
+  width: 2%;
+  height: 100%;
   background-color: #4b4862;
 }
 
