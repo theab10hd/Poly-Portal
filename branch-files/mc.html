@@ -64,17 +64,284 @@
       </div>
     </nav>
     <!-- Hero -->
-    <div class="container hero p-4">
-      <h3 class="text-center text-md-start py-3 fw-bold" id="examMaterials">
+    <div class="container hero p-3">
+      <h3 class="text-center text-md-start fw-bold mt-5" id="examMaterials">
         Mechanical Engineering REV 2021
       </h3>
-      <div
-        class="container bg-dark d-flex align-items-center justify-content-center"
-      >
-        <div class="row">
-          <div class="col-6"></div>
-          <div class="liner-vertical"></div>
-          <div class="col-6"></div>
+      <div class="container mt-4 p-0">
+        <p class="text-center text-md-start text-dark-emphasis">
+          Choose Your Semester
+        </p>
+        <div class="row mt-1">
+          <div class="col-12 text-center text-lg-start gap-2">
+            <!-- Sem Button -->
+            <button
+              class="btn home-bottons-non text-start mt-1"
+              onclick="toggleSemester(2)"
+              id="btnSem2"
+            >
+              Semester 2
+            </button>
+            <!-- End -->
+            <button
+              class="btn home-bottons-non text-start mt-1"
+              onclick="toggleSemester(3)"
+              id="btnSem3"
+            >
+              Semester 3
+            </button>
+            <!-- End -->
+            <button
+              class="btn home-bottons-non text-start mt-1"
+              onclick="toggleSemester(4)"
+              id="btnSem4"
+            >
+              Semester 4
+            </button>
+            <!-- End -->
+            <button
+              class="btn home-bottons-non text-start mt-1"
+              onclick="toggleSemester(5)"
+              id="btnSem5"
+            >
+              Semester 5
+            </button>
+            <!-- End -->
+            <button
+              class="btn home-bottons-non text-start mt-1"
+              onclick="toggleSemester(6)"
+              id="btnSem6"
+            >
+              Semester 6
+            </button>
+          </div>
+          <div class="conatiner">
+            <div class="liner mt-3"></div>
+          </div>
+          <div class="container mt-3">
+            <p class="text-center text-md-start text-dark-emphasis">
+              Choose Your Subject
+            </p>
+            <div class="container px-3 px-md-0">
+              <!-- Sem 2 Start -->
+              <div class="col d-none sem" id="sem2">
+                <a href="http://" target="_blank" class="nav-link mt-1">
+                  <button
+                    class="col-12 col-lg-4 text-center text-md-start btn home-bottons-non"
+                  >
+                    Fundamentals of Electrical & Electronics Engineering
+                  </button>
+                </a>
+                <a href="http://" target="_blank" class="nav-link mt-1">
+                  <button
+                    class="col-12 col-lg-4 text-center text-md-start btn home-bottons-non"
+                  >
+                    Problem Solving and Programming
+                  </button>
+                </a>
+              </div>
+              <!-- Sem 2 End -->
+              <!-- Sem 3 Start -->
+              <div class="col d-none sem" id="sem3">
+                <a href="http://" target="_blank" class="nav-link mt-1">
+                  <button
+                    class="col-12 col-lg-4 text-center text-md-start btn home-bottons-non"
+                  >
+                    Computer Organisation
+                  </button>
+                </a>
+                <a href="http://" target="_blank" class="nav-link mt-1">
+                  <button
+                    class="col-12 col-lg-4 text-center text-md-start btn home-bottons-non"
+                  >
+                    Programming in C
+                  </button>
+                </a>
+                <a href="http://" target="_blank" class="nav-link mt-1">
+                  <button
+                    class="col-12 col-lg-4 text-center text-md-start btn home-bottons-non"
+                  >
+                    Database Management Systems
+                  </button>
+                </a>
+                <a href="http://" target="_blank" class="nav-link mt-1">
+                  <button
+                    class="col-12 col-lg-4 text-center text-md-start btn home-bottons-non"
+                  >
+                    Digital Computer Fundamentals
+                  </button>
+                </a>
+              </div>
+              <!-- Sem 3 End -->
+              <!-- Sem 4 Start -->
+              <div class="col d-none sem" id="sem4">
+                <a href="http://" target="_blank" class="nav-link mt-1">
+                  <button
+                    class="col-12 col-lg-4 text-center text-md-start btn home-bottons-non"
+                  >
+                    Object Oriented Programming
+                  </button>
+                </a>
+                <a href="http://" target="_blank" class="nav-link mt-1">
+                  <button
+                    class="col-12 col-lg-4 text-center text-md-start btn home-bottons-non"
+                  >
+                    Computer Communication and Networks
+                  </button>
+                </a>
+                <a href="http://" target="_blank" class="nav-link mt-1">
+                  <button
+                    class="col-12 col-lg-4 text-center text-md-start btn home-bottons-non"
+                  >
+                    Data Structures
+                  </button>
+                </a>
+              </div>
+              <!-- Sem 4 End -->
+              <!-- Sem 5 Start -->
+              <div class="col d-none sem" id="sem5">
+                <a href="http://" target="_blank" class="nav-link mt-1">
+                  <button
+                    class="col-12 col-lg-4 text-center text-md-start btn home-bottons-non"
+                  >
+                    Project Management and Software Engineering
+                  </button>
+                </a>
+                <a href="http://" target="_blank" class="nav-link mt-1">
+                  <button
+                    class="col-12 col-lg-4 text-center text-md-start btn home-bottons-non"
+                  >
+                    Embedded System and Real time Operating System
+                  </button>
+                </a>
+                <a href="http://" target="_blank" class="nav-link mt-1">
+                  <button
+                    class="col-12 col-lg-4 text-center text-md-start btn home-bottons-non"
+                  >
+                    Operating System
+                  </button>
+                </a>
+                <a
+                  href="http://"
+                  target="_blank"
+                  class="nav-link mt-1 disabled"
+                >
+                  <button
+                    class="col-12 col-lg-4 text-center text-md-start btn home-bottons-non disabled"
+                  >
+                    Virtualisation Technology and Cloud Computing
+                  </button>
+                </a>
+                <a href="http://" target="_blank" class="nav-link mt-1">
+                  <button
+                    class="col-12 col-lg-4 text-center text-md-start btn home-bottons-non"
+                  >
+                    Ethical Hacking
+                  </button>
+                </a>
+                <a
+                  href="http://"
+                  target="_blank"
+                  class="nav-link mt-1 disabled"
+                >
+                  <button
+                    class="col-12 col-lg-4 text-center text-md-start btn home-bottons-non disabled"
+                  >
+                    Fundamentals of Artificial Intelligence and Machine Learning
+                  </button>
+                </a>
+              </div>
+              <!-- Sem 5 End -->
+              <!-- Sem 6 Start -->
+              <div class="col d-none sem" id="sem6">
+                <a
+                  href="http://"
+                  target="_blank"
+                  class="nav-link mt-1 disabled"
+                >
+                  <button
+                    class="col-12 col-lg-4 text-center text-md-start btn home-bottons-non disabled"
+                  >
+                    Internet of Things
+                  </button>
+                </a>
+                <a
+                  href="http://"
+                  target="_blank"
+                  class="nav-link mt-1 disabled"
+                >
+                  <button
+                    class="col-12 col-lg-4 text-center text-md-start btn home-bottons-non disabled"
+                  >
+                    Server Administration
+                  </button>
+                </a>
+                <a href="http://" target="_blank" class="nav-link mt-1">
+                  <button
+                    class="col-12 col-lg-4 text-center text-md-start btn home-bottons-non"
+                  >
+                    Software Testing
+                  </button>
+                </a>
+                <a
+                  href="http://"
+                  target="_blank"
+                  class="nav-link mt-1 disabled"
+                >
+                  <button
+                    class="col-12 col-lg-4 text-center text-md-start btn home-bottons-non disabled"
+                  >
+                    Introduction to 5G
+                  </button>
+                </a>
+                <a
+                  href="http://"
+                  target="_blank"
+                  class="nav-link mt-1 disabled"
+                >
+                  <button
+                    class="col-12 col-lg-4 text-center text-md-start btn home-bottons-non disabled"
+                  >
+                    Introduction to IoT
+                  </button>
+                </a>
+                <a
+                  href="http://"
+                  target="_blank"
+                  class="nav-link mt-1 disabled"
+                >
+                  <button
+                    class="col-12 col-lg-4 text-center text-md-start btn home-bottons-non disabled"
+                  >
+                    Fundamentals of Web Technology
+                  </button>
+                </a>
+                <a
+                  href="http://"
+                  target="_blank"
+                  class="nav-link mt-1 disabled"
+                >
+                  <button
+                    class="col-12 col-lg-4 text-center text-md-start btn home-bottons-non disabled"
+                  >
+                    Multimedia
+                  </button>
+                </a>
+                <a
+                  href="http://"
+                  target="_blank"
+                  class="nav-link mt-1 disabled"
+                >
+                  <button
+                    class="col-12 col-lg-4 text-center text-md-start btn home-bottons-non disabled"
+                  >
+                    Cloud Computing
+                  </button>
+                </a>
+              </div>
+              <!-- Sem 6 End -->
+            </div>
+          </div>
         </div>
       </div>
     </div>
@@ -92,6 +359,7 @@
         </span>
       </div>
     </footer>
+    <script src="/script/script.js"></script>
     <!-- Bootstrap Js-->
     <script
       src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"

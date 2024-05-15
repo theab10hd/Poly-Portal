@@ -110,3 +110,11 @@ body::-webkit-scrollbar {
 .btn-shadow {
   box-shadow: #00000052 0px 10px 10px;
 }
+
+.selectedBtn {
+  background-color: #891311 !important;
+}
+
+.disabled {
+  cursor: not-allowed !important;
+}
