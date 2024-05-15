@@ -13,6 +13,8 @@
       integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
       crossorigin="anonymous"
     />
+    <!-- Logo -->
+    <link rel="shortcut icon" href="/imgs/logo.png" type="image/x-icon" />
   </head>
   <body>
     <nav class="navbar navbar-expand-md border">
@@ -55,8 +57,11 @@
               >
             </li>
             <li class="nav-item">
-              <a class="nav-link font-secondary" aria-current="page" href="#"
-                >Help</a
+              <a
+                class="nav-link pe-5 font-secondary"
+                aria-current="page"
+                href="/about.html"
+                >About</a
               >
             </li>
           </ul>
@@ -66,29 +71,47 @@
     <!-- Hero -->
     <div class="container hero p-3">
       <h3 class="text-center text-md-start fw-bold mt-5" id="examMaterials">
-        General Department REV 2021
+        <a href="/exam.html"
+          ><i class="fa-solid fa-chevron-left pe-2" style="color: #000"></i></a
+        >General Department REV 2021
       </h3>
       <div class="container mt-4 p-0">
         <p class="text-center text-md-start text-dark-emphasis">
-          Choose Your Semester
+          Choose Semester
         </p>
         <div class="row mt-1">
           <div class="col-12 text-center text-lg-start gap-2">
             <!-- Sem Button -->
             <button
               class="btn home-bottons-non text-start mt-1"
-              onclick="toggleSemester(2)"
-              id="btnSem2"
+              onclick="toggleSemester(1)"
+              id="btnSem1"
             >
               Semester 1
             </button>
             <!-- End -->
             <button
               class="btn home-bottons-non text-start mt-1"
-              onclick="toggleSemester(3)"
-              id="btnSem3"
+              onclick="toggleSemester(2)"
+              id="btnSem2"
             >
               Semester 2
+            </button>
+            <!-- End -->
+            <button
+              class="btn home-bottons-non text-start mt-1"
+              onclick="toggleSemester(4)"
+              id="btnSem4"
+            >
+              Semester 4
+            </button>
+            <!-- End -->
+            <button
+              class="btn home-bottons-non text-start mt-1"
+              onclick="toggleSemester(6)"
+              id="btnSem6"
+            >
+              Semester 6
             </button>
             <!-- End -->
           </div>
@@ -97,7 +120,7 @@
           </div>
           <div class="container mt-3">
             <p class="text-center text-md-start text-dark-emphasis">
-              Choose Your Subject
+              Choose Subject
             </p>
             <div class="container px-3 px-md-0">
               <!-- Sem 1 Start -->
@@ -106,14 +129,35 @@
                   <button
                     class="col-12 col-lg-4 text-center text-md-start btn home-bottons-non"
                   >
-                    Fundamentals of Electrical & Electronics Engineering
+                    Communication Skills in English
                   </button>
                 </a>
                 <a href="http://" target="_blank" class="nav-link mt-1">
                   <button
                     class="col-12 col-lg-4 text-center text-md-start btn home-bottons-non"
                   >
-                    Problem Solving and Programming
+                    Mathematics I
+                  </button>
+                </a>
+                <a href="http://" target="_blank" class="nav-link mt-1">
+                  <button
+                    class="col-12 col-lg-4 text-center text-md-start btn home-bottons-non"
+                  >
+                    Applied Physics I
+                  </button>
+                </a>
+                <a href="http://" target="_blank" class="nav-link mt-1">
+                  <button
+                    class="col-12 col-lg-4 text-center text-md-start btn home-bottons-non"
+                  >
+                    Applied Chemistry
+                  </button>
+                </a>
+                <a href="http://" target="_blank" class="nav-link mt-1">
+                  <button
+                    class="col-12 col-lg-4 text-center text-md-start btn home-bottons-non"
+                  >
+                    Engineering Graphics
                   </button>
                 </a>
               </div>
@@ -124,32 +168,54 @@
                   <button
                     class="col-12 col-lg-4 text-center text-md-start btn home-bottons-non"
                   >
-                    Computer Organisation
+                    Environmental Science
                   </button>
                 </a>
                 <a href="http://" target="_blank" class="nav-link mt-1">
                   <button
                     class="col-12 col-lg-4 text-center text-md-start btn home-bottons-non"
                   >
-                    Programming in C
+                    Mathematics II
                   </button>
                 </a>
                 <a href="http://" target="_blank" class="nav-link mt-1">
                   <button
                     class="col-12 col-lg-4 text-center text-md-start btn home-bottons-non"
                   >
-                    Database Management Systems
-                  </button>
-                </a>
-                <a href="http://" target="_blank" class="nav-link mt-1">
-                  <button
-                    class="col-12 col-lg-4 text-center text-md-start btn home-bottons-non"
-                  >
-                    Digital Computer Fundamentals
+                    Applied Physics II
                   </button>
                 </a>
               </div>
               <!-- Sem 2 End -->
+              <!-- Sem 4 Start -->
+              <div class="col d-none sem" id="sem4">
+                <a href="http://" target="_blank" class="nav-link mt-1">
+                  <button
+                    class="col-12 col-lg-4 text-center text-md-start btn home-bottons-non"
+                  >
+                    Community Skills in Indian knowledge system
+                  </button>
+                </a>
+              </div>
+              <!-- Sem 4 End -->
+              <!-- Sem 6 Start -->
+              <div class="col d-none sem" id="sem6">
+                <a href="http://" target="_blank" class="nav-link mt-1">
+                  <button
+                    class="col-12 col-lg-4 text-center text-md-start btn home-bottons-non"
+                  >
+                    Entrepreneurship and Startup
+                  </button>
+                </a>
+                <a href="http://" target="_blank" class="nav-link mt-1">
+                  <button
+                    class="col-12 col-lg-4 text-center text-md-start btn home-bottons-non"
+                  >
+                    Indian Constitution
+                  </button>
+                </a>
+              </div>
+              <!-- Sem 6 End -->
             </div>
           </div>
         </div>
@@ -164,7 +230,7 @@
             href="https://www.instagram.com/abhijithgaganan"
             target="_blank"
             class="text-dark-emphasis"
-            >For Info & Help</a
+            >For Feedbacks and Reports</a
           >
         </span>
       </div>
