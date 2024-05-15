@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("/style/responsive.css");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  color: #000;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  background-color: #eeeeee !important;
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+.font-secondary {
+  font-family: "Poppins", sans-serif;
+}
+
+:root {
+  --primary: #dd1c1a;
+}
+
+.color-primary {
+  color: var(--primary) !important;
+}
+
+.footer {
+  margin-top: auto; /* Push the footer to the bottom of the viewport */
+}
+
+.home-bottons {
+  background-color: var(--primary) !important;
+  color: white !important;
+  transition: 0.5s ease-in-out all !important;
+}
+
+.home-bottons:hover {
+  scale: 1.05;
+  box-shadow: #00000052 0px 5px 10px;
+}
+
+.footer-text {
+  font-size: 0.8rem;
+}
+
+.box {
+  border-radius: 10px;
+  background-size: cover;
+}
+
+.box:hover {
+  transition: 0.3s ease-in-out all !important;
+  box-shadow: #00000052 0px 10px 20px;
+}
+
+.sub-cs {
+  background-image: linear-gradient(#0000005e, #000000), url(/imgs/cs.png);
+}
+
+.sub-mech {
+  background-image: linear-gradient(#0000005e, #000000), url(/imgs/mech.png);
+}
+
+.sub-civil {
+  background-image: linear-gradient(#0000005e, #000000), url(/imgs/civil.png);
+}
+
+.sub-elect {
+  background-image: linear-gradient(#0000005e, #000000), url(/imgs/elect.png);
+}
+
+.sub-gen {
+  background-image: linear-gradient(#0000005e, #000000), url(/imgs/gen.png);
+}
+
+.exam-main {
+  background-image: linear-gradient(#0000005e, #000000), url(/imgs/exam.png);
+}
+
+.liner {
+  width: 100%;
+  height: 2px;
+  background-color: #4b4862;
+}
+
+.btn-shadow {
+  box-shadow: #00000052 0px 10px 10px;
+}
