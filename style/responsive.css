@@ -1,12 +1,16 @@
 /* Extra small devices (phones, 576px and down) */
 @media (max-width: 576px) {
   .hero-image {
-    width: 70%;
+    width: 90%;
   }
 
   .box {
     width: 300px;
     height: 100px;
+  }
+
+  .hero-description {
+    font-size: small;
   }
 }
 
@@ -33,6 +37,10 @@
   .box:hover {
     scale: 1.05;
   }
+
+  .hero-description {
+    font-size: medium;
+  }
 }
 
 /* Large devices (desktops, 992px and up) */
@@ -43,6 +51,10 @@
 
   body {
     height: 100vh;
+  }
+
+  .hero-description {
+    font-size: larger;
   }
 }
 
